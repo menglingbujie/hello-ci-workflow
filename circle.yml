@@ -6,6 +6,4 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:10.13
     steps:
-      - run: yarn install
-
-      - run: ./node_modules/.bin/mocha
+      - run: npm run test
