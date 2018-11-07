@@ -6,4 +6,4 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:10.13
     steps:
-      - ./node_modules/.bin/mocha
+      - run: ./node_modules/.bin/mocha
