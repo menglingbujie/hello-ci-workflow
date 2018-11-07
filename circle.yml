@@ -1,8 +1,9 @@
 # circle.yml
-machine:
-  node:
-    version: 0.10
-
-test:
-  override:
-    - ./node_modules/.bin/mocha
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.13
+    steps:
+      - ./node_modules/.bin/mocha
